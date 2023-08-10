@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./page2.css" rel="stylesheet" />
+
+      <div class="page2-container">
+        <div class="page2-page2">
+          <div class="page2-list">
+            <div class="page2-item">
+              <div class="page2-label">
+                <span class="page2-text">
+                  <span>
+                    To the best of your knowledge, is this feedback something
+                    that others in your situation would also share?
+                  </span>
+                </span>
+              </div>
+              <div class="page2-divcid29">
+                <div class="page2-group">
+                  <label class="page2-label01">
+                    <div class="container">
+                      <input
+                        type="radio"
+                        id="cbx1"
+                        name="opt1"
+                        style="display: none"
+                      />
+                      <label for="cbx1" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                          <path
+                            d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"
+                          ></path>
+                          <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                      </label>
+                    </div>
+                    <span class="page2-text04"><span>Yes</span></span>
+                  </label>
+                  <label class="page2-label01">
+                    <div class="container">
+                      <input
+                        type="radio"
+                        id="cbx2"
+                        name="opt1"
+                        style="display: none"
+                      />
+                      <label for="cbx2" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                          <path
+                            d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"
+                          ></path>
+                          <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                      </label>
+                    </div>
+                    <span class="page2-text04"><span>No</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="page2-item1">
+              <div class="page2-label03">
+                <span class="page2-text08">
+                  <span>How satisfied are you with our company overall?</span>
+                </span>
+              </div>
+              <div class="page2-divcid30">
+                <div
+                  class="ui massive heart rating"
+                  data-rating="0"
+                  data-max-rating="5"
+                ></div>
+                <script>
+                  $(".rating").rating();
+                </script>
+              </div>
+            </div>
+            <div class="page2-item2">
+              <div class="page2-label04">
+                <span class="page2-text10"><span>Feature 1</span></span>
+              </div>
+              <div class="page2-radiogroup1">
+                <div
+                  class="ui massive star rating"
+                  data-rating="0"
+                  data-max-rating="5"
+                ></div>
+                <script>
+                  $(".rating").rating();
+                </script>
+              </div>
+            </div>
+            <div class="page2-item3">
+              <div class="page2-label05">
+                <span class="page2-text12"><span>Feature 2</span></span>
+              </div>
+              <div class="page2-radiogroup2">
+                <div
+                  class="ui massive star rating"
+                  data-rating="0"
+                  data-max-rating="5"
+                ></div>
+                <script>
+                  $(".rating").rating();
+                </script>
+              </div>
+            </div>
+            <div class="page2-item4">
+              <div class="page2-label06">
+                <span class="page2-text14"><span>Feature 3</span></span>
+              </div>
+              <div class="page2-radiogroup3">
+                <div
+                  class="ui massive star rating"
+                  data-rating="0"
+                  data-max-rating="5"
+                ></div>
+                <script>
+                  $(".rating").rating();
+                </script>
+              </div>
+            </div>
+            <div class="page2-item5">
+              <div class="page2-label07">
+                <span class="page2-text16"><span>Feature 4</span></span>
+              </div>
+              <div class="page2-radiogroup4">
+                <div
+                  class="ui massive star rating"
+                  data-rating="0"
+                  data-max-rating="5"
+                ></div>
+                <script>
+                  $(".rating").rating();
+                </script>
+              </div>
+            </div>
+            <div class="page2-item6">
+              <div class="page2-label08">
+                <span class="page2-text18">
+                  <span>
+                    Would you recommend it to your friends and colleagues?
+                  </span>
+                </span>
+              </div>
+              <div class="page2-divcid29">
+                <div class="page2-group">
+                  <label class="page2-label01">
+                    <div class="container">
+                      <input
+                        type="radio"
+                        id="cbx3"
+                        name="opt2"
+                        style="display: none"
+                      />
+                      <label for="cbx3" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                          <path
+                            d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"
+                          ></path>
+                          <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                      </label>
+                    </div>
+                    <span class="page2-text04"><span>Yes</span></span>
+                  </label>
+                  <label class="page2-label01">
+                    <div class="container">
+                      <input
+                        type="radio"
+                        id="cbx4"
+                        name="opt2"
+                        style="display: none"
+                      />
+                      <label for="cbx4" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                          <path
+                            d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"
+                          ></path>
+                          <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                      </label>
+                    </div>
+                    <span class="page2-text04"><span>No</span></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="page2-item7">
+              <div class="page2-label11">
+                <span class="page2-text24">
+                  <span>
+                    Do you have any suggestions to improve our product and
+                    service?
+                  </span>
+                </span>
+              </div>
+              <div class="page2-textarea"></div>
+            </div>
+            <a href="index.html" class="page2-button">
+              <span class="page2-text26"><span>Back</span></span>
+            </a>
+            <button class="page2-button1" onclick="return validateForm();">
+              <span class="page2-text28"><span>Submit</span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="validationModal" class="ui modal">
+      <div class="header">Validation Error</div>
+      <div class="content">
+        <p id="validationMessage">Please fill out all required fields.</p>
+      </div>
+      <div class="actions">
+        <div class="ui button" onclick="closeValidationModal()">OK</div>
+      </div>
+    </div>
+    <script>
+      function openValidationModal(message) {
+        const modal = document.getElementById("validationModal");
+        const validationMessage = document.getElementById("validationMessage");
+        validationMessage.innerText = message;
+        $(modal).modal("show");
+      }
+
+      function closeValidationModal() {
+        const modal = document.getElementById("validationModal");
+        $(modal).modal("hide");
+      }
+      function validateForm() {
+        // Validation for radio buttons (group 1)
+        const radioGroup1 = document.getElementsByName("opt1");
+        let isRadioSelected1 = false;
+        for (let i = 0; i < radioGroup1.length; i++) {
+          if (radioGroup1[i].checked) {
+            isRadioSelected1 = true;
+            break;
+          }
+        }
+
+        // Validation for radio buttons (group 2)
+        const radioGroup2 = document.getElementsByName("opt2");
+        let isRadioSelected2 = false;
+        for (let i = 0; i < radioGroup2.length; i++) {
+          if (radioGroup2[i].checked) {
+            isRadioSelected2 = true;
+            break;
+          }
+        }
+
+        // Perform validation for other inputs
+        const inputsToValidate = document.querySelectorAll(
+          'input[type="radio"], input[type="checkbox"], input[type="text"], input[type="email"]'
+        );
+
+        let isFormValid = true;
+
+        inputsToValidate.forEach((input) => {
+          if (
+            (input.type === "radio" || input.type === "checkbox") &&
+            !input.checked
+          ) {
+            isFormValid = false;
+          } else if (input.type === "text" || input.type === "email") {
+            if (input.value.trim() === "") {
+              isFormValid = false;
+            }
+          }
+        });
+        if (!isRadioSelected1 || !isRadioSelected2 || !isFormValid) {
+          openValidationModal("Please fill out all required fields.");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>

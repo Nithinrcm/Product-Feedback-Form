@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="english">
+  <head>
+    <title>Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <script src="modal.js"></script>
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="page1-container">
+        <div class="page1-page1">
+          <div class="page1-list">
+            <div class="page1-item">
+              <div class="page1-divformpagebreak">
+                <a href="page2.html" class="page1-button button" onclick="validateForm()">
+                  <span class="page1-text"><span>Next</span></span>
+                </a>
+              </div>
+            </div>
+            <div class="page1-item1">
+              <div class="page1-label">
+                <span class="page1-text02">
+                  <span>Date of Purchase of the product</span>
+                </span>
+              </div>
+              <div class="page1-div">
+                <div class="page1-iframe-body-main">
+                  <div class="page1-input-pickadate">
+                    <input type="datetime-local" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page1-item2">
+              <div class="page1-p">
+                <span class="page1-text06">
+                  <span>
+                    <span>
+                      Please leave your email address if you would like us to
+                      contact you regarding any
+                    </span>
+                    <br />
+                    <span>questions.</span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="page1-item3">
+              <div class="page1-divformheadergroup">
+                <div class="page1-divheaderlogo">
+                  <img
+                    src="public/external/untitled20design202020220421t0949365876260fe8c8b4327-8cwj-200w.png"
+                    alt="Untitled20design202020220421T0949365876260fe8c8b4327"
+                    class="page1-untitled20design202020220421t0949365876260fe8c8b43"
+                  />
+                </div>
+                <div class="page1-divheadertext">
+                  <span class="page1-text11">
+                    <span>Product Customer Feedback Form&nbsp;</span>
+                  </span>
+                  <div class="page1-divsub-header26">
+                    <span class="page1-text13">
+                      <span>
+                        <span>
+                          Thank you for taking time to provide feedback. We
+                          appreciate hearing from you and
+                        </span>
+                        <br />
+                        <span>will review your comments carefully.</span>
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page1-frame">
+              <div class="page1-item4">
+                <div class="page1-label1">
+                  <span class="page1-text18"><span>Full Name</span></span>
+                </div>
+                <div class="page1-div2">
+                  <div class="page1-spanformsublabelcontainer">
+                    <input
+                      type="text"
+                      placeholder="first name"
+                      class="page1-input"
+                    />
+                  </div>
+                  <div class="page1-spanformsublabelcontainer1">
+                    <input
+                      type="text"
+                      placeholder="last name"
+                      class="page1-input1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="page1-item5">
+                <div class="page1-label2">
+                  <span class="page1-text20"><span>E-mail Address</span></span>
+                </div>
+                <div class="page1-spanformsublabelcontainer2">
+                  <input type="text" placeholder="email" class="page1-input2" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="validationModal" class="ui modal">
+      <div class="header">Validation Error</div>
+      <div class="content">
+        <p id="validationMessage">Please fill out all required fields.</p>
+      </div>
+      <div class="actions">
+        <div class="ui button" onclick="closeValidationModal()">OK</div>
+      </div>
+    </div>
+    <script>
+      function openValidationModal(message) {
+        const modal = document.getElementById("validationModal");
+        const validationMessage = document.getElementById("validationMessage");
+        validationMessage.innerText = message;
+        $(modal).modal("show");
+      }
+
+      function closeValidationModal() {
+        const modal = document.getElementById("validationModal");
+        $(modal).modal("hide");
+      }
+      function validateForm() {
+        const firstNameInput = document.querySelector(".page1-input");
+        const lastNameInput = document.querySelector(".page1-input1");
+        const emailInput = document.querySelector(".page1-input2");
+        if (firstNameInput.value.trim() === "") {
+          openValidationModal("Please enter your first name.");
+          event.preventDefault();
+          return;
+        }
+
+        if (lastNameInput.value.trim() === "") {
+          openValidationModal("Please enter your last name.");
+          event.preventDefault();
+          return;
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(emailInput.value)) {
+          openValidationModal("Please enter a valid email address.");
+          event.preventDefault();
+          return;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
